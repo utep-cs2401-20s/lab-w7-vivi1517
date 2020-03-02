@@ -13,7 +13,8 @@ Given an array of integers, you have to modify this array (not create another on
 
 | 3rd largest 	| 4th largest 	| 7th largest 	| 8th largest 	| ... 	| ... 	| 6th largest 	| 5th largest 	| 2nd largest 	| 1st largest 	|
 |-------------	|-------------	|-------------	|-------------	|-----	|-----	|-------------	|-------------	|-------------	|-------------	|
-For an example, see the one posted in the PDF instructions included in this repo, entitled `Lab-Week7-Sorting.pdf`
+|	|	|	|	|	|	|	|	|	|	|
+<br>For an example, see the one posted in the PDF instructions included in this repo, entitled `Lab-Week7-Sorting.pdf`
 
 # What do you have to do?
 1. Write a method to transform the array of integers passed as a parameter into a sort of sorted array.<br>
