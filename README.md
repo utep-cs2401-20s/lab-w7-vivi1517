@@ -10,7 +10,9 @@ We expect that, by the time you complete this lab you will:
 
 # What problem will you be addressing in this lab
 Given an array of integers, you have to modify this array (not create another one) that is sort of sorted. Here, "sort of sorted" means the following:
-| 3rd largest | 4th largest | 7th largest | 8th largest | etc. | ... | ... | 6th largest | 5th largest | 2nd largest | 1st largest |
+
+| 3rd largest 	| 4th largest 	| 7th largest 	| 8th largest 	| ... 	| ... 	| 6th largest 	| 5th largest 	| 2nd largest 	| 1st largest 	|
+|-------------	|-------------	|-------------	|-------------	|-----	|-----	|-------------	|-------------	|-------------	|-------------	|
 For an example, see the one posted in the PDF instructions included in this repo, entitled `Lab-Week7-Sorting.pdf`
 
 # What do you have to do?
