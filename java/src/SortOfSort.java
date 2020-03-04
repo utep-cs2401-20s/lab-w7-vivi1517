@@ -1,21 +1,66 @@
 public class SortOfSort {
-   public void sortOfSort(int[] array){
-       int max = array[0];
-       int index = 0;
-       int counter = 1;     //counts the round were on when looking for max
-       int secondCounter = 1;
-       for (int i = 0; i < array.length; i++){
-           for (int j = 0; j < array.length - 1; j++) {
-               if (array[j] > array[j + 1]) {
-                   max = array[j];
-                   index = j;//go through array looking for max. once max is found switch it to
+    public void sortOfSort(int[] array){
+        sortOfSort(array, 0, array.length - 1, 1);
+    }
+    public void sortOfSort(int[] array, int low, int high, int counter){
+       if(low <= high) {
+           if (counter == 1) {
+               int max = array[low];
+               int index = low;
+               for (int i = low + 1; i < high; i++) {
+                   if (array[i] > max) {
+                       max = array[i];
+                       index = i;
+                   }
                }
+               int temp = array[high];
+               array[high] = array[index];
+               array[index] = temp;
+               sortOfSort(array, low, high - 1, counter + 1);
+           }
+           else if (counter == 2) {
+               int max = array[low];
+               int index = low;
+               for (int i = low + 1; i < high; i++) {
+                   if (array[i] > max) {
+                       max = array[i];
+                       index = i;
+                   }
+               }
+               int temp = array[high];
+               array[high] = array[index];
+               array[index] = temp;
+               sortOfSort(array, low, high - 1, counter + 1);
+           }
+           else if (counter == 3) {
+               int max = array[low];
+               int index = low;
+               for (int i = low + 1; i < high; i++) {
+                   if (array[i] > max) {
+                       max = array[i];
+                       index = i;
+                   }
+               }
+               int temp = array[low];
+               array[low] = array[index];
+               array[index] = temp;
+               sortOfSort(array, low + 1, high, counter + 1);
+           }
+           else if (counter == 4){
+               int max = array[low];
+               int index = low;
+               for (int i = low + 1; i < high; i++) {
+                   if (array[i] > max) {
+                       max = array[i];
+                       index = i;
+                   }
+               }
+               int temp = array[low];
+               array[low] = array[index];
+               array[index] = temp;
+               sortOfSort(array, low + 1, high, 0);
            }
        }
-       int temp = array[]
-        }
-        int temp = array[array.length - 1];
-        array[array.length - 1] = max;
    }
 
 }
