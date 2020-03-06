@@ -1,5 +1,5 @@
 public class SortOfSort {
-    public void sortOfSort(int[] array){
+    public void sortOfSort(int[] array) {
         sortOfSort(array, 0, array.length - 1, 1);
     }
     public void sortOfSort(int[] array, int low, int high, int counter){
@@ -7,7 +7,7 @@ public class SortOfSort {
            if (counter == 1) {
                int max = array[low];
                int index = low;
-               for (int i = low + 1; i < high; i++) {
+               for (int i = low + 1; i <= high; i++) {
                    if (array[i] > max) {
                        max = array[i];
                        index = i;
@@ -21,7 +21,7 @@ public class SortOfSort {
            else if (counter == 2) {
                int max = array[low];
                int index = low;
-               for (int i = low + 1; i < high; i++) {
+               for (int i = low + 1; i <= high; i++) {
                    if (array[i] > max) {
                        max = array[i];
                        index = i;
@@ -35,7 +35,7 @@ public class SortOfSort {
            else if (counter == 3) {
                int max = array[low];
                int index = low;
-               for (int i = low + 1; i < high; i++) {
+               for (int i = low + 1; i <= high; i++) {
                    if (array[i] > max) {
                        max = array[i];
                        index = i;
@@ -49,7 +49,7 @@ public class SortOfSort {
            else if (counter == 4){
                int max = array[low];
                int index = low;
-               for (int i = low + 1; i < high; i++) {
+               for (int i = low + 1; i <= high; i++) {
                    if (array[i] > max) {
                        max = array[i];
                        index = i;
@@ -58,7 +58,7 @@ public class SortOfSort {
                int temp = array[low];
                array[low] = array[index];
                array[index] = temp;
-               sortOfSort(array, low + 1, high, 0);
+               sortOfSort(array, low + 1, high, 1);
            }
        }
    }
